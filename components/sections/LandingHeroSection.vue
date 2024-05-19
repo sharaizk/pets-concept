@@ -17,7 +17,15 @@
       </div>
       <div
         class="d-flex-column justify-end align-end flex-5 section right_area"
-      ></div>
+      >
+        <NuxtImg
+          class="hero-image"
+          src="/images/home/hero.webp"
+          placeholder="/images/home/hero_placeholder.webp"
+          alt="hero-image"
+          quality="100"
+        />
+      </div>
       <NuxtImg
         class="hero-second-image"
         src="/images/home/hero-second.webp"
@@ -30,4 +38,3 @@
 </template>
 
 <script setup></script>
-
