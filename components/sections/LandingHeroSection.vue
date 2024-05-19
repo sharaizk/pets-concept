@@ -21,7 +21,8 @@
         <NuxtImg
           class="hero-image"
           src="/images/home/hero.webp"
-          placeholder="/images/home/hero_placeholder.webp"
+          placeholder
+          placeholder-class="hero-hide"
           alt="hero-image"
           quality="100"
         />

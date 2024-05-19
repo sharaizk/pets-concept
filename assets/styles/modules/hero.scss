@@ -8,7 +8,6 @@
   padding: 30px;
   padding-top: 12vh;
   padding-bottom: 0;
-  
 
   .hero_content_container {
     width: 100%;
@@ -37,6 +36,9 @@
     object-fit: contain;
     max-height: 70vh;
   }
+  .hero-hide {
+    display: none;
+  }
   .hero-second-image {
     position: absolute;
     width: 100%;
@@ -46,7 +48,7 @@
     bottom: 0%;
     right: 15vw;
     transform: translate(-0%, 32.5%) !important;
-    @media screen and (max-width:900px) {
+    @media screen and (max-width: 900px) {
       right: 0%;
       left: 0%;
     }
