@@ -7,10 +7,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "clean": "nuxt cleanup"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "nuxt": "^3.11.2",
+    "nuxt-icon": "^0.6.10",
+    "sass": "^1.77.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   }

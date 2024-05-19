@@ -1,0 +1,238 @@
+@import "mixins";
+
+.font-family-1 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-family-2 {
+  font-family: "Readex Pro", sans-serif;
+}
+
+.t-dark {
+  color: var(--dark);
+}
+
+.t-white-main {
+  color: var(--white-main);
+}
+
+.t-white {
+  color: var(--white);
+}
+
+.t-blue {
+  color: var(--blue);
+}
+.t-blue-light {
+  color: var(--blue-light);
+}
+.t-yellow {
+  color: var(--yellow);
+}
+
+.title {
+  @extend .f-w-600;
+  &-h1 {
+    @include adaptiv-font(80, 30);
+    @include adaptiv-line-height(85, 39);
+  }
+  &-h2 {
+    @include adaptiv-font(48, 30);
+    @include adaptiv-line-height(59, 30);
+  }
+  &-h3 {
+    @include adaptiv-font(36, 24);
+    @include adaptiv-line-height(44, 32);
+  }
+  &-h4 {
+    @include adaptiv-font(30, 26);
+    @include adaptiv-line-height(36, 30);
+  }
+  &-h5 {
+    @include adaptiv-font(24, 24);
+    @include adaptiv-line-height(29, 29);
+  }
+  &-h6 {
+    @include adaptiv-font(18, 16);
+    @include adaptiv-line-height(22, 15);
+  }
+}
+
+.f-w-200 {
+  font-weight: 200;
+}
+.f-w-300 {
+  font-weight: 300 !important;
+}
+.f-w-400 {
+  font-weight: 400 !important;
+}
+.f-w-500 {
+  font-weight: 500 !important;
+}
+.f-w-600 {
+  font-weight: 600 !important;
+}
+.f-w-700 {
+  font-weight: 700 !important;
+}
+.f-w-800 {
+  font-weight: 800 !important;
+}
+.bold {
+  &-xxxxl {
+    @extend .f-w-700;
+    @include adaptiv-font(22, 20);
+    @include adaptiv-line-height(27, 25);
+  }
+  &-xxxl {
+    @extend .f-w-700;
+    @include adaptiv-font(20, 18);
+    @include adaptiv-line-height(27, 24);
+  }
+  &-xxl {
+    @extend .f-w-700;
+    @include adaptiv-font(18, 16);
+    @include adaptiv-line-height(24, 20);
+  }
+  &-xl {
+    @extend .f-w-700;
+    @include adaptiv-font(16, 14);
+    @include adaptiv-line-height(21, 17);
+  }
+  &-l {
+    @extend .f-w-700;
+    @include adaptiv-font(14, 12);
+    @include adaptiv-line-height(18, 16);
+  }
+  &-m {
+    @extend .f-w-700;
+    @include adaptiv-font(13, 11);
+    @include adaptiv-line-height(17, 15);
+  }
+  &-s {
+    @extend .f-w-700;
+    @include adaptiv-font(12, 12);
+    @include adaptiv-line-height(16, 16);
+  }
+  &-xs {
+    @extend .f-w-700;
+    @include adaptiv-font(10, 10);
+    @include adaptiv-line-height(13, 12);
+  }
+  &-pack {
+    @extend .f-w-700;
+    @include adaptiv-font(24, 18);
+    @include adaptiv-line-height(30, 25);
+  }
+}
+
+.caps {
+  text-transform: uppercase;
+}
+.medium {
+  &-xxxxl {
+    @include adaptiv-font(24, 18);
+    @include adaptiv-line-height(32, 26);
+    @extend .f-w-500;
+  }
+  &-xxxl {
+    @include adaptiv-font(20, 16);
+    @include adaptiv-line-height(27, 21);
+    @extend .f-w-500;
+  }
+  &-xxl {
+    @include adaptiv-font(18, 15);
+    @include adaptiv-line-height(24, 20);
+    @extend .f-w-500;
+  }
+  &-xl {
+    @include adaptiv-font(16, 16);
+    @include adaptiv-line-height(21, 21);
+    @extend .f-w-500;
+  }
+  &-l {
+    @include adaptiv-font(14, 14);
+    @include adaptiv-line-height(18, 18);
+    @extend .f-w-500;
+  }
+  &-m {
+    @include adaptiv-font(13, 10);
+    @include adaptiv-line-height(17, 10);
+    @extend .f-w-500;
+  }
+  &-s {
+    @include adaptiv-font(12, 10);
+    @include adaptiv-line-height(16, 12);
+    @extend .f-w-500;
+  }
+  &-xs {
+    @include adaptiv-font(10, 10);
+    @include adaptiv-line-height(13, 13);
+    @extend .f-w-500;
+  }
+}
+.regular {
+  &-xxxxl {
+    @include adaptiv-font(24, 21);
+    @include adaptiv-line-height(32, 29);
+    @extend .f-w-400;
+  }
+  &-xxxl {
+    @extend .f-w-400;
+    @include adaptiv-font(20, 17);
+    @include adaptiv-line-height(27, 24);
+  }
+  &-xxl {
+    @extend .f-w-400;
+    @include adaptiv-font(18, 15);
+    @include adaptiv-line-height(24, 21);
+  }
+  &-xl {
+    @extend .f-w-400;
+    @include adaptiv-font(16, 16);
+    @include adaptiv-line-height(21, 21);
+  }
+  &-l2 {
+    @extend .f-w-400;
+
+    @include adaptiv-font(14, 14);
+    @include adaptiv-line-height(18, 18);
+  }
+  &-l {
+    @extend .f-w-400;
+    @include adaptiv-font(14, 12);
+    @include adaptiv-line-height(18, 14);
+  }
+  &-m {
+    @extend .f-w-400;
+    @include adaptiv-font(13, 13);
+    @include adaptiv-line-height(17, 17);
+  }
+  &-s {
+    @extend .f-w-400;
+    @include adaptiv-font(12, 12);
+    @include adaptiv-line-height(16, 16);
+  }
+  &-xs {
+    @extend .f-w-400;
+    @include adaptiv-font(10, 9);
+    @include adaptiv-line-height(13, 9);
+  }
+  &-pack {
+    @extend .f-w-400;
+    @include adaptiv-font(13, 13);
+    @include adaptiv-line-height(17, 17);
+  }
+
+  @media screen and (max-width: 600px) {
+    &-pack {
+      @extend .f-w-400;
+      @include adaptiv-font(16, 16);
+      @include adaptiv-line-height(22, 22);
+    }
+  }
+}
