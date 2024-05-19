@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ["/assets/styles/app.scss"],
+  css: ["/assets/styles/app.scss", "/assets/styles/modules/hero.scss"],
   app: {
     head: {
       title: "The Pets' Concept",

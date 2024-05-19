@@ -31,6 +31,3 @@
 
 <script setup></script>
 
-<style>
-@import "/assets/styles/modules/hero.scss";
-</style>
