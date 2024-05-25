@@ -16,11 +16,16 @@
       <Icon name="logos:google-maps" size="20" />
       4.9 Google reviews
     </a>
+
+    <HappyPets />
+    <BestIn />
   </div>
 </template>
 
 <script setup>
 import LandingHeroSection from "~/components/sections/LandingHeroSection.vue";
+import HappyPets from "~/components/sections/HappyPets.vue";
+import BestIn from "~/components/sections/BestIn.vue";
 definePageMeta({
   layout: "default",
 });

@@ -29,6 +29,7 @@ body {
   overflow-x: hidden !important;
   overflow-y: auto;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 html {
@@ -49,7 +50,7 @@ html {
 }
 
 .common_section_container {
-  max-width: 1280px;
+  max-width: 1240px;
 }
 
 .minor_info {
@@ -66,7 +67,7 @@ html {
     }
   }
 
-  @media screen and (max-width:900px) {
+  @media screen and (max-width: 900px) {
     margin-top: 70px;
   }
 }

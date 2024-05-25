@@ -36,12 +36,13 @@
 .title {
   @extend .f-w-600;
   &-h1 {
-    @include adaptiv-font(80, 30);
-    @include adaptiv-line-height(85, 39);
+    font-size: clamp(40px, 5.5vw, 80px);
+    line-height: clamp(45px, 5.9vw, 85px);
   }
   &-h2 {
-    @include adaptiv-font(48, 30);
-    @include adaptiv-line-height(59, 30);
+    font-size: clamp(35px, 4.16vw, 60px);
+    line-height: clamp(40px, 4.51vw, 65px);
+
   }
   &-h3 {
     @include adaptiv-font(36, 24);

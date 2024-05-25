@@ -64,6 +64,56 @@
   }
   @media screen and (max-width: 900px) {
     height: max-content;
+    padding-top: 14vh;
     min-height: 80vh;
+    .hero-image {
+      max-height: 45vh;
+    }
   }
+}
+
+.happy_pets_section {
+  min-height: 90vh;
+  // min-width: 100vw;
+  width: 100%;
+  // background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+
+  .happy-pets-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 525px;
+  }
+  .happy-pets-dog-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100px;
+  }
+  .our-promise-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 350px;
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.we_are_best_in_section {
+  min-height: max-content;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
 }
