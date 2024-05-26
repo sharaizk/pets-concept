@@ -118,18 +118,20 @@
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
-  .cat-paw-image{
+  .cat-paw-image {
     position: absolute;
     z-index: -1;
-    right: -100px;
+    right: -140px;
     top: -100px;
     width: 100%;
     height: auto;
     object-fit: contain;
     max-width: 300px;
-    @media screen and (max-width:600px) {
-    max-width: 200px;
-      
+    @media screen and (max-width: 1200px) {
+      right: -120px;
+    }
+    @media screen and (max-width: 600px) {
+      max-width: 200px;
     }
   }
 }
