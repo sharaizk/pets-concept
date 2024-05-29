@@ -42,7 +42,6 @@
   &-h2 {
     font-size: clamp(35px, 4.16vw, 60px);
     line-height: clamp(40px, 4.51vw, 65px);
-
   }
   &-h3 {
     @include adaptiv-font(36, 24);
@@ -53,7 +52,7 @@
     @include adaptiv-line-height(36, 30);
   }
   &-h5 {
-    @include adaptiv-font(24, 24);
+    @include adaptiv-font(20, 20);
     @include adaptiv-line-height(29, 29);
   }
   &-h6 {
@@ -205,8 +204,8 @@
   }
   &-l {
     @extend .f-w-400;
-    @include adaptiv-font(14, 12);
-    @include adaptiv-line-height(18, 14);
+    @include adaptiv-font(14, 13);
+    @include adaptiv-line-height(18, 17);
   }
   &-m {
     @extend .f-w-400;

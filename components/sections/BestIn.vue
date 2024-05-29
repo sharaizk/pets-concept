@@ -1,26 +1,12 @@
 <template>
-  <section class="we_are_best_in_section">
+  <section class="we_are_best_in_section common_section_container">
     <h2 class="title-h2 font-family-1 t-dark text-center">We are best in:</h2>
-    <NuxtImg
-      src="/images/home/cat-paw.svg"
-      alt="cat-paw"
-      class="cat-paw-image"
-    />
+    <NuxtImg src="/images/home/cat-paw.svg" alt="cat-paw" class="cat-paw-image" />
     <div class="services_container">
-      <NuxtLink
-        to="/"
-        class="service_item d-flex-column"
-        v-for="(service, index) in services"
-      >
+      <NuxtLink to="/" class="service_item d-flex-column" v-for="(service, index) in services">
         <div class="service_icon">
-          <NuxtImg
-            :src="service.icon"
-            alt="service_icon"
-            class="service_icon_image"
-            quality="100"
-            :class="[`image_${index}`]"
-            fit="cover"
-          />
+          <NuxtImg :src="service.icon" alt="service_icon" class="service_icon_image" quality="100"
+            :class="[`image_${index}`]" fit="cover" />
         </div>
         <label class="t-dark font-family-2 medium-xxxl">{{
           service.title

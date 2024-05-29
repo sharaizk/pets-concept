@@ -121,12 +121,19 @@
   .cat-paw-image {
     position: absolute;
     z-index: -1;
-    right: -140px;
+    right: -30%;
     top: -100px;
     width: 100%;
     height: auto;
     object-fit: contain;
     max-width: 300px;
+    @media screen and (max-width: 1600px) {
+      right: -200px;
+    }
+    @media screen and (max-width: 1440px) {
+      right: -140px;
+    }
+
     @media screen and (max-width: 1200px) {
       right: -120px;
     }
@@ -186,7 +193,79 @@
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 340px) {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.why_rely_us_section {
+  min-height: max-content;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  .wings-image {
+    position: absolute;
+    left: -30px;
+    top: 0%;
+    transform: translate(0%, 0%);
+    width: 15vw;
+    max-width: 225px;
+    height: auto;
+    object-fit: contain;
+  }
+  .reasons-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
+    padding: 0 30px;
+
+    .reason_item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .reason_icon {
+        margin-right: 40px;
+      }
+      .dog-paw {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+      }
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center !important;
+        .reason_icon {
+          margin-right: 0;
+          margin-bottom: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+        .reason_desc {
+          justify-content: center;
+          align-items: center !important;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
