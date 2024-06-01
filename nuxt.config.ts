@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ["/assets/styles/app.scss", "/assets/styles/modules/sections.scss"],
+  css: [
+    "/assets/styles/app.scss",
+    "/assets/styles/modules/sections.scss",
+    "/assets/styles/components.scss",
+  ],
   app: {
     head: {
       title: "The Pets' Concept",
@@ -94,7 +98,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "nuxt-icon"],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "nuxt-icon", "nuxt-mapbox"],
   googleFonts: {
     families: {
       Fredoka: [300, 400, 500, 600, 700],
@@ -102,5 +106,8 @@ export default defineNuxtConfig({
     },
     display: "swap",
     preload: true,
+  },
+  mapbox: {
+    accessToken: process.env.NUXT_MAPBOX_API_KEY,
   },
 });

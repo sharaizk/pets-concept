@@ -12,7 +12,7 @@
                     </div>
                     <div class="d-flex-column justify-start align-start reason_desc flex-9">
                         <h5 class="t-dark title-h5 f-w-500 font-family-2">{{ reason.question }}</h5>
-                        <p class="regular-l font-family-1">{{ reason.answer }}</p>
+                        <p class="regular-m font-family-1">{{ reason.answer }}</p>
                     </div>
                 </div>
             </div>

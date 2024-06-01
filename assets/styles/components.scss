@@ -1,1 +1,24 @@
-
+.review_card {
+  padding: 32px;
+  width: 100%;
+  height: 100%;
+  max-width: 421px;
+  max-height: 242px;
+  //   background-color: var(--white-main);
+  .review-banner {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    transition: all 0.2s ease;
+    &:hover {
+      box-shadow: 1px 14px 19px -1px rgba(0, 0, 0, 0.07);
+      -webkit-box-shadow: 1px 14px 19px -1px rgba(0, 0, 0, 0.07);
+      -moz-box-shadow: 1px 14px 19px -1px rgba(0, 0, 0, 0.07);
+    }
+  }
+}
