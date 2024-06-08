@@ -273,4 +273,27 @@
 .lets-meet-section {
   margin-top: 100px;
   margin-bottom: 100px;
+  gap: 40px;
+  .lets_meet_map_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 20px;
+    .lets_meet_iframe {
+      width: 100%;
+      border: 0;
+      border-radius: 20px;
+    }
+  }
+  .location_container {
+    max-width: 1000px;
+  }
+}
+
+.location_detail_container {
+  border-bottom: 1px solid var(--dark-light);
+  padding-bottom: 40px;
 }
