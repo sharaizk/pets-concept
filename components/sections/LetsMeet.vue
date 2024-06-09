@@ -16,7 +16,9 @@
       ></iframe>
     </div>
     <div class="d-flex-column location_container">
-      <div class="d-flex-row space-between gap-20 md-row-to-col location_detail_container">
+      <div
+        class="d-flex-row space-between gap-20 md-row-to-col location_detail_container"
+      >
         <!-- FIRST -->
         <div class="d-flex-row space-between align-start gap-10 flex-3">
           <div class="d-flex-row flex-2 align-start">
