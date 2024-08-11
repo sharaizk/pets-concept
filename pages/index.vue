@@ -22,6 +22,7 @@
   <WhyRelyUs />
   <Testimonials />
   <LetsMeet />
+  <LocationsFaq />
 </template>
 
 <script setup>
@@ -31,6 +32,7 @@ import BestIn from "~/components/sections/BestIn.vue";
 import WhyRelyUs from "~/components/sections/WhyRelyUs.vue";
 import Testimonials from "~/components/sections/Testimonials.vue";
 import LetsMeet from "~/components/sections/LetsMeet.vue";
+import LocationsFaq from "~/components/sections/LocationsFaq.vue";
 definePageMeta({
   layout: "default",
 });
